@@ -1,0 +1,17 @@
+C:\Users\omoru\Desktop\TodoApp\TodoApp.Data\bin\Debug\net6.0\TodoApp.Data.deps.json
+C:\Users\omoru\Desktop\TodoApp\TodoApp.Data\bin\Debug\net6.0\TodoApp.Data.runtimeconfig.json
+C:\Users\omoru\Desktop\TodoApp\TodoApp.Data\bin\Debug\net6.0\TodoApp.Data.dll
+C:\Users\omoru\Desktop\TodoApp\TodoApp.Data\bin\Debug\net6.0\TodoApp.Data.pdb
+C:\Users\omoru\Desktop\TodoApp\TodoApp.Data\bin\Debug\net6.0\TodoApp.Model.dll
+C:\Users\omoru\Desktop\TodoApp\TodoApp.Data\bin\Debug\net6.0\TodoApp.Model.pdb
+C:\Users\omoru\Desktop\TodoApp\TodoApp.Data\obj\Debug\net6.0\TodoApp.Data.csproj.AssemblyReference.cache
+C:\Users\omoru\Desktop\TodoApp\TodoApp.Data\obj\Debug\net6.0\TodoApp.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\omoru\Desktop\TodoApp\TodoApp.Data\obj\Debug\net6.0\TodoApp.Data.AssemblyInfoInputs.cache
+C:\Users\omoru\Desktop\TodoApp\TodoApp.Data\obj\Debug\net6.0\TodoApp.Data.AssemblyInfo.cs
+C:\Users\omoru\Desktop\TodoApp\TodoApp.Data\obj\Debug\net6.0\TodoApp.Data.csproj.CoreCompileInputs.cache
+C:\Users\omoru\Desktop\TodoApp\TodoApp.Data\obj\Debug\net6.0\TodoApp.Data.csproj.CopyComplete
+C:\Users\omoru\Desktop\TodoApp\TodoApp.Data\obj\Debug\net6.0\TodoApp.Data.dll
+C:\Users\omoru\Desktop\TodoApp\TodoApp.Data\obj\Debug\net6.0\refint\TodoApp.Data.dll
+C:\Users\omoru\Desktop\TodoApp\TodoApp.Data\obj\Debug\net6.0\TodoApp.Data.pdb
+C:\Users\omoru\Desktop\TodoApp\TodoApp.Data\obj\Debug\net6.0\TodoApp.Data.genruntimeconfig.cache
+C:\Users\omoru\Desktop\TodoApp\TodoApp.Data\obj\Debug\net6.0\ref\TodoApp.Data.dll
