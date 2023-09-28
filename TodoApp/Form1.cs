@@ -13,6 +13,8 @@ namespace TodoApp
         {
             InitializeComponent();
             _toDoListService = toDoListService;
+
+            RefreshDataGridView();
         }
         public void Form1_Load(object sender, EventArgs e)
         {
@@ -100,57 +102,6 @@ namespace TodoApp
                 }
             }
         }
-
-        private void LoadButton_Click_1(object sender, EventArgs e)
-        {
-            // Call your _toDoListService (or data access layer) to fetch all to-do items
-            List<TodoItem> todoItems = _toDoListService.GetAllTodoItems();
-
-            if (todoItems != null && todoItems.Count > 0)
-            {
-                // Set the DataGridView's data source to the retrieved to-do items
-                GridView1.DataSource = todoItems;
-            }
-            else
-            {
-                // If there are no to-do items, you can display a message or handle it as needed
-                MessageBox.Show("No to-do items found.");
-            }
-        }
-
-        //private void SearchTodo_Click(object sender, EventArgs e)
-        //{
-        //    try
-        //    {
-        //        // Get the search criteria from the user input (e.g., a search term or date range)
-        //        string searchTerm = SearchBox.Text.Trim();
-        //        // Ensure that at least one search criterion is provided
-        //        if (string.IsNullOrEmpty(searchTerm))
-        //        {
-        //            MessageBox.Show("Please enter a search keyword");
-        //            return;
-        //        }
-
-        //        // Perform the search based on the criteria
-        //        List<TodoItem> allTodoItems = _toDoListService.GetAllTodoItems();
-        //        var filteredItem = allTodoItems.Where(x => x.Task.ToLower().Contains(searchTerm) ||
-        //        x.Name.ToLower().Contains(searchTerm) || x.Description.ToLower().Contains(searchTerm)).ToList();
-        //        if (filteredItem.Any())
-        //        {
-        //            GridView1.DataSource = filteredItem;
-        //            MessageBox.Show("Search result loaded successfully");
-        //        }
-        //        else
-        //        {
-        //            GridView1.DataSource = null;
-        //            MessageBox.Show("search keyword not found");
-        //        }
-        //    }
-        //    catch (Exception ex)
-        //    {
-        //        MessageBox.Show("Error" + ex);
-        //    }
-        //}
 
         private void SearchTodo_Click(object sender, EventArgs e)
         {

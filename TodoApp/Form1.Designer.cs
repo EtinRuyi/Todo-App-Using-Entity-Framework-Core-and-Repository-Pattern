@@ -43,7 +43,6 @@
             UpdateButton = new Button();
             DeleteButton = new Button();
             EditButton = new Button();
-            LoadButton = new Button();
             AddButton = new Button();
             Description = new Label();
             DescriptionTextBox = new TextBox();
@@ -161,7 +160,7 @@
             // UpdateButton
             // 
             UpdateButton.Font = new Font("Times New Roman", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
-            UpdateButton.Location = new Point(779, 335);
+            UpdateButton.Location = new Point(694, 335);
             UpdateButton.Name = "UpdateButton";
             UpdateButton.Size = new Size(172, 45);
             UpdateButton.TabIndex = 15;
@@ -183,24 +182,13 @@
             // EditButton
             // 
             EditButton.Font = new Font("Times New Roman", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
-            EditButton.Location = new Point(513, 335);
+            EditButton.Location = new Point(331, 335);
             EditButton.Name = "EditButton";
             EditButton.Size = new Size(178, 45);
             EditButton.TabIndex = 17;
             EditButton.Text = "Edit Selected";
             EditButton.UseVisualStyleBackColor = true;
             EditButton.Click += EditButton_Click_1;
-            // 
-            // LoadButton
-            // 
-            LoadButton.Font = new Font("Times New Roman", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
-            LoadButton.Location = new Point(262, 335);
-            LoadButton.Name = "LoadButton";
-            LoadButton.Size = new Size(166, 45);
-            LoadButton.TabIndex = 18;
-            LoadButton.Text = "Load All Todo";
-            LoadButton.UseVisualStyleBackColor = true;
-            LoadButton.Click += LoadButton_Click_1;
             // 
             // AddButton
             // 
@@ -252,7 +240,6 @@
             Controls.Add(DescriptionTextBox);
             Controls.Add(Description);
             Controls.Add(AddButton);
-            Controls.Add(LoadButton);
             Controls.Add(EditButton);
             Controls.Add(DeleteButton);
             Controls.Add(UpdateButton);
@@ -292,7 +279,6 @@
         private Button UpdateButton;
         private Button DeleteButton;
         private Button EditButton;
-        private Button LoadButton;
         private Button AddButton;
         private Label Description;
         private TextBox DescriptionTextBox;
