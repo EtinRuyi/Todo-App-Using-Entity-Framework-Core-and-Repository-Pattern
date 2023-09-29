@@ -173,9 +173,9 @@
             UpdateButton.ForeColor = Color.Black;
             UpdateButton.Image = (Image)resources.GetObject("UpdateButton.Image");
             UpdateButton.ImageAlign = ContentAlignment.MiddleLeft;
-            UpdateButton.Location = new Point(210, 275);
+            UpdateButton.Location = new Point(716, 202);
             UpdateButton.Name = "UpdateButton";
-            UpdateButton.Size = new Size(98, 45);
+            UpdateButton.Size = new Size(95, 45);
             UpdateButton.TabIndex = 15;
             UpdateButton.Text = "Update";
             UpdateButton.TextAlign = ContentAlignment.MiddleRight;
@@ -188,7 +188,7 @@
             DeleteButton.ForeColor = Color.Black;
             DeleteButton.Image = (Image)resources.GetObject("DeleteButton.Image");
             DeleteButton.ImageAlign = ContentAlignment.MiddleLeft;
-            DeleteButton.Location = new Point(345, 275);
+            DeleteButton.Location = new Point(716, 253);
             DeleteButton.Name = "DeleteButton";
             DeleteButton.Size = new Size(95, 45);
             DeleteButton.TabIndex = 16;
@@ -203,7 +203,7 @@
             EditButton.ForeColor = Color.Black;
             EditButton.Image = (Image)resources.GetObject("EditButton.Image");
             EditButton.ImageAlign = ContentAlignment.MiddleLeft;
-            EditButton.Location = new Point(109, 275);
+            EditButton.Location = new Point(577, 253);
             EditButton.Name = "EditButton";
             EditButton.Size = new Size(75, 45);
             EditButton.TabIndex = 17;
@@ -218,7 +218,7 @@
             AddButton.ForeColor = Color.Black;
             AddButton.Image = (Image)resources.GetObject("AddButton.Image");
             AddButton.ImageAlign = ContentAlignment.MiddleLeft;
-            AddButton.Location = new Point(12, 275);
+            AddButton.Location = new Point(577, 202);
             AddButton.Name = "AddButton";
             AddButton.Size = new Size(75, 45);
             AddButton.TabIndex = 19;
@@ -243,7 +243,7 @@
             DescriptionTextBox.Location = new Point(12, 225);
             DescriptionTextBox.Multiline = true;
             DescriptionTextBox.Name = "DescriptionTextBox";
-            DescriptionTextBox.Size = new Size(800, 44);
+            DescriptionTextBox.Size = new Size(344, 73);
             DescriptionTextBox.TabIndex = 21;
             // 
             // GridView1
