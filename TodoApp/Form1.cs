@@ -64,11 +64,30 @@ namespace TodoApp
             }
         }
 
+        //private void RefreshDataGridView()
+        //{
+        //    List<TodoItem> todoItems = _toDoListService.GetAllTodoItems();
+        //    GridView1.DataSource = new BindingList<TodoItem>(todoItems); // Use BindingList for live sorting
+        //}
+
         private void RefreshDataGridView()
         {
             List<TodoItem> todoItems = _toDoListService.GetAllTodoItems();
-            GridView1.DataSource = new BindingList<TodoItem>(todoItems); // Use BindingList for live sorting
+            var bindingList = new BindingList<TodoItem>(todoItems);
+            GridView1.DataSource = bindingList;
+
+            // Set the desired width for each column
+            GridView1.Columns["ID"].Width = 40; // Set the width for the "ID" column (adjust the value as needed)
+            GridView1.Columns["Name"].Width = 120; // Set the width for the "Name" column (adjust the value as needed)
+            GridView1.Columns["Task"].Width = 150; // Set the width for the "Task" column (adjust the value as needed)
+            GridView1.Columns["Description"].Width = 200; // Set the width for the "Description" column (adjust the value as needed)
+            GridView1.Columns["DateCreated"].Width = 100; // Set the width for the "DateCreated" column (adjust the value as needed)
+            GridView1.Columns["DueDate"].Width = 100; // Set the width for the "DueDate" column (adjust the value as needed)
+            GridView1.Columns["IsCompleted"].Width = 85;
+            // You can adjust the width values as per your design preferences.
         }
+
+
 
 
         private void Reset()

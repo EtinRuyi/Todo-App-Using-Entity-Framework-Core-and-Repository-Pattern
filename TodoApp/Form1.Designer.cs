@@ -144,7 +144,7 @@
             SearchBox.Name = "SearchBox";
             SearchBox.Size = new Size(155, 25);
             SearchBox.TabIndex = 11;
-            SearchBox.Text = "Enter title";
+            SearchBox.Text = "Enter Name/Task";
             SearchBox.TextAlign = HorizontalAlignment.Center;
             // 
             // DateCreated
@@ -248,7 +248,6 @@
             // 
             // GridView1
             // 
-            GridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             GridView1.BackgroundColor = SystemColors.ControlDarkDark;
             GridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             GridView1.Location = new Point(11, 358);
