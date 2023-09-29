@@ -15,6 +15,7 @@ namespace TodoApp
         public TodoApp(TodoAppService toDoListService, ITodoAppRepositories todoRepositories)
         {
             InitializeComponent();
+            timer1.Start();
             _toDoListService = toDoListService;
             _todoRepositories = todoRepositories;
 
@@ -229,6 +230,16 @@ namespace TodoApp
             }
         }
 
-
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            if(label1.Right > 0)
+            {
+                label1.Left -= 5;
+            }
+            else
+            {
+                label1.Left = this.Width;
+            }
+        }
     }
 }

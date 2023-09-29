@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TodoApp));
             Header = new Label();
             DueDate = new DateTimePicker();
@@ -47,6 +48,8 @@
             Description = new Label();
             DescriptionTextBox = new TextBox();
             GridView1 = new DataGridView();
+            label1 = new Label();
+            timer1 = new System.Windows.Forms.Timer(components);
             ((System.ComponentModel.ISupportInitialize)GridView1).BeginInit();
             SuspendLayout();
             // 
@@ -230,12 +233,29 @@
             GridView1.Size = new Size(1171, 303);
             GridView1.TabIndex = 22;
             // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new Font("Times New Roman", 14.25F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
+            label1.Location = new Point(800, 66);
+            label1.Name = "label1";
+            label1.Size = new Size(390, 22);
+            label1.TabIndex = 23;
+            label1.Text = "Organize, prioritize, and conquer with TodoApp";
+            label1.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // timer1
+            // 
+            timer1.Enabled = true;
+            timer1.Tick += timer1_Tick;
+            // 
             // TodoApp
             // 
             AutoScaleDimensions = new SizeF(8F, 17F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.DodgerBlue;
             ClientSize = new Size(1194, 701);
+            Controls.Add(label1);
             Controls.Add(GridView1);
             Controls.Add(DescriptionTextBox);
             Controls.Add(Description);
@@ -283,5 +303,7 @@
         private Label Description;
         private TextBox DescriptionTextBox;
         private DataGridView GridView1;
+        private Label label1;
+        private System.Windows.Forms.Timer timer1;
     }
 }
