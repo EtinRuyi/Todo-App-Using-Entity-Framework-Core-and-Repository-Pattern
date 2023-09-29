@@ -135,7 +135,7 @@ namespace TodoApp
                 if (filteredItems.Any())
                 {
                     GridView1.DataSource = filteredItems;
-                    MessageBox.Show("Search result loaded successfully");
+                    //MessageBox.Show("Search result loaded successfully");
                 }
                 else
                 {

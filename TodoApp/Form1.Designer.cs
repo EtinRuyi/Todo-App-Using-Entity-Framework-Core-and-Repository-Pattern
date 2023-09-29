@@ -102,9 +102,9 @@
             Name.AllowDrop = true;
             Name.Font = new Font("Times New Roman", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
             Name.ForeColor = Color.WhiteSmoke;
-            Name.Location = new Point(12, 129);
+            Name.Location = new Point(12, 118);
             Name.Name = "Name";
-            Name.Size = new Size(75, 25);
+            Name.Size = new Size(58, 25);
             Name.TabIndex = 5;
             Name.Text = "Name";
             Name.TextAlign = ContentAlignment.MiddleCenter;
@@ -113,27 +113,27 @@
             // 
             Task.Font = new Font("Times New Roman", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
             Task.ForeColor = Color.WhiteSmoke;
-            Task.Location = new Point(12, 161);
+            Task.Location = new Point(12, 174);
             Task.Name = "Task";
-            Task.Size = new Size(61, 25);
+            Task.Size = new Size(51, 25);
             Task.TabIndex = 6;
             Task.Text = "Task";
             Task.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // NameTextBox
             // 
-            NameTextBox.Location = new Point(79, 130);
+            NameTextBox.Location = new Point(12, 146);
             NameTextBox.Multiline = true;
             NameTextBox.Name = "NameTextBox";
-            NameTextBox.Size = new Size(277, 25);
+            NameTextBox.Size = new Size(343, 25);
             NameTextBox.TabIndex = 8;
             // 
             // TaskTextBox
             // 
-            TaskTextBox.Location = new Point(79, 161);
+            TaskTextBox.Location = new Point(12, 202);
             TaskTextBox.Multiline = true;
             TaskTextBox.Name = "TaskTextBox";
-            TaskTextBox.Size = new Size(277, 25);
+            TaskTextBox.Size = new Size(343, 25);
             TaskTextBox.TabIndex = 9;
             // 
             // SearchBox
@@ -173,7 +173,7 @@
             UpdateButton.ForeColor = Color.Black;
             UpdateButton.Image = (Image)resources.GetObject("UpdateButton.Image");
             UpdateButton.ImageAlign = ContentAlignment.MiddleLeft;
-            UpdateButton.Location = new Point(716, 202);
+            UpdateButton.Location = new Point(615, 293);
             UpdateButton.Name = "UpdateButton";
             UpdateButton.Size = new Size(95, 45);
             UpdateButton.TabIndex = 15;
@@ -188,7 +188,7 @@
             DeleteButton.ForeColor = Color.Black;
             DeleteButton.Image = (Image)resources.GetObject("DeleteButton.Image");
             DeleteButton.ImageAlign = ContentAlignment.MiddleLeft;
-            DeleteButton.Location = new Point(716, 253);
+            DeleteButton.Location = new Point(716, 293);
             DeleteButton.Name = "DeleteButton";
             DeleteButton.Size = new Size(95, 45);
             DeleteButton.TabIndex = 16;
@@ -203,7 +203,7 @@
             EditButton.ForeColor = Color.Black;
             EditButton.Image = (Image)resources.GetObject("EditButton.Image");
             EditButton.ImageAlign = ContentAlignment.MiddleLeft;
-            EditButton.Location = new Point(577, 253);
+            EditButton.Location = new Point(534, 293);
             EditButton.Name = "EditButton";
             EditButton.Size = new Size(75, 45);
             EditButton.TabIndex = 17;
@@ -218,7 +218,7 @@
             AddButton.ForeColor = Color.Black;
             AddButton.Image = (Image)resources.GetObject("AddButton.Image");
             AddButton.ImageAlign = ContentAlignment.MiddleLeft;
-            AddButton.Location = new Point(577, 202);
+            AddButton.Location = new Point(453, 293);
             AddButton.Name = "AddButton";
             AddButton.Size = new Size(75, 45);
             AddButton.TabIndex = 19;
@@ -231,16 +231,16 @@
             // 
             Description.Font = new Font("Times New Roman", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
             Description.ForeColor = Color.WhiteSmoke;
-            Description.Location = new Point(12, 189);
+            Description.Location = new Point(11, 229);
             Description.Name = "Description";
-            Description.Size = new Size(114, 43);
+            Description.Size = new Size(105, 33);
             Description.TabIndex = 20;
             Description.Text = "Description";
             Description.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // DescriptionTextBox
             // 
-            DescriptionTextBox.Location = new Point(12, 225);
+            DescriptionTextBox.Location = new Point(11, 265);
             DescriptionTextBox.Multiline = true;
             DescriptionTextBox.Name = "DescriptionTextBox";
             DescriptionTextBox.Size = new Size(344, 73);
@@ -251,7 +251,7 @@
             GridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             GridView1.BackgroundColor = SystemColors.ControlDarkDark;
             GridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            GridView1.Location = new Point(11, 326);
+            GridView1.Location = new Point(11, 358);
             GridView1.Name = "GridView1";
             GridView1.RowTemplate.Height = 25;
             GridView1.Size = new Size(800, 189);
@@ -279,7 +279,7 @@
             AutoScaleDimensions = new SizeF(8F, 17F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Black;
-            ClientSize = new Size(823, 527);
+            ClientSize = new Size(823, 559);
             Controls.Add(label1);
             Controls.Add(GridView1);
             Controls.Add(DescriptionTextBox);
