@@ -1,5 +1,7 @@
+using System.ComponentModel;
 using TodoApp.Core.Services;
 using TodoApp.Data;
+using TodoApp.Data.Repositories.Interfaces;
 using TodoApp.Model;
 
 namespace TodoApp
@@ -7,12 +9,14 @@ namespace TodoApp
     public partial class TodoApp : Form
     {
         private readonly TodoAppService _toDoListService;
+        private readonly ITodoAppRepositories _todoRepositories;
         private int selectedTaskId;
 
-        public TodoApp(TodoAppService toDoListService)
+        public TodoApp(TodoAppService toDoListService, ITodoAppRepositories todoRepositories)
         {
             InitializeComponent();
             _toDoListService = toDoListService;
+            _todoRepositories = todoRepositories;
 
             RefreshDataGridView();
         }
@@ -62,8 +66,9 @@ namespace TodoApp
         private void RefreshDataGridView()
         {
             List<TodoItem> todoItems = _toDoListService.GetAllTodoItems();
-            GridView1.DataSource = todoItems;
+            GridView1.DataSource = new BindingList<TodoItem>(todoItems); // Use BindingList for live sorting
         }
+
 
         private void Reset()
         {
@@ -170,6 +175,7 @@ namespace TodoApp
                     {
                         _toDoListService.DeleteTodoItem(itemId);
                     }
+                    _todoRepositories.ResetAutoIncrement();
                 }
 
                 RefreshDataGridView();

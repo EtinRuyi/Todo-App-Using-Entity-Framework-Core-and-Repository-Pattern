@@ -36,8 +36,9 @@ namespace TodoApp.Core.Services
 
         public List<TodoItem> GetAllTodoItems()
         {
-            return _context.TodoItems.ToList();
+            return _context.TodoItems.OrderByDescending(item => item.DateCreated).ToList();
         }
+
 
         public TodoItem GetTodoItemById(int id)
         {
