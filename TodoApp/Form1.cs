@@ -232,7 +232,7 @@ namespace TodoApp
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-            if(label1.Right > 0)
+            if (label1.Right > 0)
             {
                 label1.Left -= 5;
             }

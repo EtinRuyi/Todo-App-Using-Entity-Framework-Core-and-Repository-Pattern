@@ -56,18 +56,19 @@
             // Header
             // 
             Header.AllowDrop = true;
-            Header.BackColor = Color.Khaki;
+            Header.BackColor = Color.Black;
             Header.Font = new Font("Times New Roman", 20.25F, FontStyle.Regular, GraphicsUnit.Point);
+            Header.ForeColor = Color.WhiteSmoke;
             Header.Location = new Point(1, 1);
             Header.Name = "Header";
-            Header.Size = new Size(1193, 53);
+            Header.Size = new Size(823, 53);
             Header.TabIndex = 1;
             Header.Text = "Todo App";
             Header.TextAlign = ContentAlignment.MiddleLeft;
             // 
             // DueDate
             // 
-            DueDate.Location = new Point(948, 143);
+            DueDate.Location = new Point(577, 161);
             DueDate.Name = "DueDate";
             DueDate.Size = new Size(235, 25);
             DueDate.TabIndex = 2;
@@ -76,7 +77,8 @@
             // 
             Created.AllowDrop = true;
             Created.Font = new Font("Times New Roman", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
-            Created.Location = new Point(840, 102);
+            Created.ForeColor = Color.WhiteSmoke;
+            Created.Location = new Point(471, 130);
             Created.Name = "Created";
             Created.Size = new Size(111, 25);
             Created.TabIndex = 13;
@@ -87,53 +89,57 @@
             // 
             Due.AllowDrop = true;
             Due.Font = new Font("Times New Roman", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
-            Due.Location = new Point(870, 143);
+            Due.ForeColor = Color.WhiteSmoke;
+            Due.Location = new Point(501, 161);
             Due.Name = "Due";
             Due.Size = new Size(81, 25);
             Due.TabIndex = 17;
             Due.Text = "Due Date :";
+            Due.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // Name
             // 
             Name.AllowDrop = true;
-            Name.Font = new Font("Times New Roman", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
-            Name.Location = new Point(12, 102);
+            Name.Font = new Font("Times New Roman", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
+            Name.ForeColor = Color.WhiteSmoke;
+            Name.Location = new Point(12, 129);
             Name.Name = "Name";
-            Name.Size = new Size(75, 36);
+            Name.Size = new Size(75, 25);
             Name.TabIndex = 5;
             Name.Text = "Name :";
             Name.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // Task
             // 
-            Task.Font = new Font("Times New Roman", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
-            Task.Location = new Point(12, 171);
+            Task.Font = new Font("Times New Roman", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
+            Task.ForeColor = Color.WhiteSmoke;
+            Task.Location = new Point(12, 161);
             Task.Name = "Task";
-            Task.Size = new Size(75, 34);
+            Task.Size = new Size(75, 25);
             Task.TabIndex = 6;
             Task.Text = "Task : ";
             Task.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // NameTextBox
             // 
-            NameTextBox.Location = new Point(12, 130);
+            NameTextBox.Location = new Point(79, 130);
             NameTextBox.Multiline = true;
             NameTextBox.Name = "NameTextBox";
-            NameTextBox.Size = new Size(277, 38);
+            NameTextBox.Size = new Size(277, 25);
             NameTextBox.TabIndex = 8;
             // 
             // TaskTextBox
             // 
-            TaskTextBox.Location = new Point(12, 199);
+            TaskTextBox.Location = new Point(79, 161);
             TaskTextBox.Multiline = true;
             TaskTextBox.Name = "TaskTextBox";
-            TaskTextBox.Size = new Size(277, 38);
+            TaskTextBox.Size = new Size(277, 25);
             TaskTextBox.TabIndex = 9;
             // 
             // SearchBox
             // 
             SearchBox.Font = new Font("Times New Roman", 9F, FontStyle.Italic, GraphicsUnit.Point);
-            SearchBox.Location = new Point(948, 18);
+            SearchBox.Location = new Point(582, 18);
             SearchBox.Multiline = true;
             SearchBox.Name = "SearchBox";
             SearchBox.Size = new Size(155, 25);
@@ -143,7 +149,7 @@
             // 
             // DateCreated
             // 
-            DateCreated.Location = new Point(948, 102);
+            DateCreated.Location = new Point(577, 130);
             DateCreated.Name = "DateCreated";
             DateCreated.Size = new Size(235, 25);
             DateCreated.TabIndex = 13;
@@ -152,7 +158,8 @@
             // 
             SearchTodo.BackColor = SystemColors.ButtonFace;
             SearchTodo.Font = new Font("Times New Roman", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
-            SearchTodo.Location = new Point(1100, 18);
+            SearchTodo.ForeColor = Color.Black;
+            SearchTodo.Location = new Point(729, 18);
             SearchTodo.Name = "SearchTodo";
             SearchTodo.Size = new Size(83, 25);
             SearchTodo.TabIndex = 14;
@@ -163,9 +170,10 @@
             // UpdateButton
             // 
             UpdateButton.Font = new Font("Times New Roman", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
-            UpdateButton.Location = new Point(694, 335);
+            UpdateButton.ForeColor = Color.Black;
+            UpdateButton.Location = new Point(458, 275);
             UpdateButton.Name = "UpdateButton";
-            UpdateButton.Size = new Size(172, 45);
+            UpdateButton.Size = new Size(124, 45);
             UpdateButton.TabIndex = 15;
             UpdateButton.Text = "Update";
             UpdateButton.UseVisualStyleBackColor = true;
@@ -174,9 +182,10 @@
             // DeleteButton
             // 
             DeleteButton.Font = new Font("Times New Roman", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
-            DeleteButton.Location = new Point(1020, 335);
+            DeleteButton.ForeColor = Color.Black;
+            DeleteButton.Location = new Point(687, 275);
             DeleteButton.Name = "DeleteButton";
-            DeleteButton.Size = new Size(162, 45);
+            DeleteButton.Size = new Size(124, 45);
             DeleteButton.TabIndex = 16;
             DeleteButton.Text = "Delete";
             DeleteButton.UseVisualStyleBackColor = true;
@@ -185,9 +194,10 @@
             // EditButton
             // 
             EditButton.Font = new Font("Times New Roman", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
-            EditButton.Location = new Point(331, 335);
+            EditButton.ForeColor = Color.Black;
+            EditButton.Location = new Point(232, 275);
             EditButton.Name = "EditButton";
-            EditButton.Size = new Size(178, 45);
+            EditButton.Size = new Size(124, 45);
             EditButton.TabIndex = 17;
             EditButton.Text = "Edit Selected";
             EditButton.UseVisualStyleBackColor = true;
@@ -196,9 +206,10 @@
             // AddButton
             // 
             AddButton.Font = new Font("Times New Roman", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
-            AddButton.Location = new Point(12, 335);
+            AddButton.ForeColor = Color.Black;
+            AddButton.Location = new Point(12, 275);
             AddButton.Name = "AddButton";
-            AddButton.Size = new Size(178, 45);
+            AddButton.Size = new Size(124, 45);
             AddButton.TabIndex = 19;
             AddButton.Text = "Add/Save";
             AddButton.UseVisualStyleBackColor = true;
@@ -206,38 +217,40 @@
             // 
             // Description
             // 
-            Description.Font = new Font("Times New Roman", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
-            Description.Location = new Point(12, 240);
+            Description.Font = new Font("Times New Roman", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
+            Description.ForeColor = Color.WhiteSmoke;
+            Description.Location = new Point(12, 189);
             Description.Name = "Description";
-            Description.Size = new Size(127, 43);
+            Description.Size = new Size(114, 43);
             Description.TabIndex = 20;
             Description.Text = "Description : ";
             Description.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // DescriptionTextBox
             // 
-            DescriptionTextBox.Location = new Point(12, 276);
+            DescriptionTextBox.Location = new Point(12, 225);
             DescriptionTextBox.Multiline = true;
             DescriptionTextBox.Name = "DescriptionTextBox";
-            DescriptionTextBox.Size = new Size(1171, 53);
+            DescriptionTextBox.Size = new Size(800, 44);
             DescriptionTextBox.TabIndex = 21;
             // 
             // GridView1
             // 
             GridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
-            GridView1.BackgroundColor = Color.DodgerBlue;
+            GridView1.BackgroundColor = SystemColors.ControlDarkDark;
             GridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            GridView1.Location = new Point(12, 386);
+            GridView1.Location = new Point(12, 326);
             GridView1.Name = "GridView1";
             GridView1.RowTemplate.Height = 25;
-            GridView1.Size = new Size(1171, 303);
+            GridView1.Size = new Size(800, 186);
             GridView1.TabIndex = 22;
             // 
             // label1
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Times New Roman", 14.25F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
-            label1.Location = new Point(800, 66);
+            label1.ForeColor = Color.PaleGoldenrod;
+            label1.Location = new Point(421, 63);
             label1.Name = "label1";
             label1.Size = new Size(390, 22);
             label1.TabIndex = 23;
@@ -253,8 +266,8 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 17F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.DodgerBlue;
-            ClientSize = new Size(1194, 701);
+            BackColor = Color.Black;
+            ClientSize = new Size(823, 527);
             Controls.Add(label1);
             Controls.Add(GridView1);
             Controls.Add(DescriptionTextBox);
@@ -275,6 +288,7 @@
             Controls.Add(DueDate);
             Controls.Add(Header);
             Font = new Font("Times New Roman", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
+            ForeColor = Color.Black;
             Icon = (Icon)resources.GetObject("$this.Icon");
             //Name = "TodoApp";
             Text = "TodoApp";
