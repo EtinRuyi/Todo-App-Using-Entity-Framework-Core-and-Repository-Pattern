@@ -45,12 +45,25 @@ namespace TodoApp.Data.Repositories.Implementations
             }
         }
 
+        //public void ResetAutoIncrement()
+        //{
+        //    string tableName = _context.Model.FindEntityType(typeof(TodoItem)).GetTableName();
+        //    string resetSql = $"DBCC CHECKIDENT ('{tableName}', RESEED, 0);";
+
+        //    _context.Database.ExecuteSqlRaw(resetSql);
+        //}
+
         public void ResetAutoIncrement()
         {
-            string tableName = _context.Model.FindEntityType(typeof(TodoItem)).GetTableName();
+            // Specify the name of your table where the identity column is located
+            string tableName = "TodoItems";
+
+            // The SQL command to reset the identity column to its seed value (1 in this case)
             string resetSql = $"DBCC CHECKIDENT ('{tableName}', RESEED, 0);";
 
+            // Execute the SQL command using Entity Framework
             _context.Database.ExecuteSqlRaw(resetSql);
         }
+
     }
 }

@@ -169,11 +169,52 @@ namespace TodoApp
         }
 
 
+        //private void DeleteButton_Click_1(object sender, EventArgs e)
+        //{
+        //    try
+        //    {
+
+        //        if (GridView1.SelectedRows.Count == 0)
+        //        {
+        //            MessageBox.Show("Please select one or more tasks to delete");
+        //            return;
+        //        }
+
+        //        DialogResult result = MessageBox.Show("Are you sure you want to delete the selected task(s) ?", "Confirm delete", MessageBoxButtons.YesNo);
+
+        //        if (result == DialogResult.Yes)
+        //        {
+        //            List<int> selectedTaskIds = new List<int>();
+        //            foreach (DataGridViewRow row in GridView1.SelectedRows)
+        //            {
+        //                int taskIdToDelete = Convert.ToInt32(row.Cells["ID"].Value);
+        //                selectedTaskIds.Add(taskIdToDelete);
+        //            }
+
+        //            foreach (int itemId in selectedTaskIds)
+        //            {
+        //                _toDoListService.DeleteTodoItem(itemId);
+        //            }
+        //            _todoRepositories.ResetAutoIncrement();
+        //        }
+
+        //        RefreshDataGridView();
+
+        //        Reset();
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        MessageBox.Show("Error" + ex);
+        //    }
+        //}
+
+
+
+
         private void DeleteButton_Click_1(object sender, EventArgs e)
         {
             try
             {
-
                 if (GridView1.SelectedRows.Count == 0)
                 {
                     MessageBox.Show("Please select one or more tasks to delete");
@@ -195,7 +236,13 @@ namespace TodoApp
                     {
                         _toDoListService.DeleteTodoItem(itemId);
                     }
-                    _todoRepositories.ResetAutoIncrement();
+
+                    // Check if the database is empty
+                    if (!_toDoListService.GetAllTodoItems().Any())
+                    {
+                        // Reset the auto-increment value since the database is empty
+                        _todoRepositories.ResetAutoIncrement();
+                    }
                 }
 
                 RefreshDataGridView();
@@ -207,6 +254,7 @@ namespace TodoApp
                 MessageBox.Show("Error" + ex);
             }
         }
+
 
         private void UpdateButton_Click_1(object sender, EventArgs e)
         {
