@@ -33,17 +33,10 @@ namespace TodoApp
         private static IServiceProvider ConfigureServices(TodoAppDBContext dbContext)
         {
             var services = new ServiceCollection();
-
             services.AddSingleton(dbContext);
-
-            // Register ITodoAppRepositories and its implementation
             services.AddScoped<ITodoAppRepositories, TodoAppRepositories>();
-
             services.AddScoped<TodoAppService>();
-
-            // Register the main form
             services.AddTransient<TodoApp>();
-
             return services.BuildServiceProvider();
         }
     }
