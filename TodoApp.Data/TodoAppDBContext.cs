@@ -5,6 +5,7 @@ namespace TodoApp.Data
 {
     public class TodoAppDBContext : DbContext
     {
+        public DbSet<TodoItem> TodoItems { get; set; }
         public TodoAppDBContext() : base()
         {
         }
@@ -12,8 +13,6 @@ namespace TodoApp.Data
         public TodoAppDBContext(DbContextOptions<TodoAppDBContext> options) : base(options)
         {
         }
-
-        public DbSet<TodoItem> TodoItems { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {

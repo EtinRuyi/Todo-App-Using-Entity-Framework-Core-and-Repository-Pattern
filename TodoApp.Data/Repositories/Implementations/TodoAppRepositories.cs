@@ -37,7 +37,7 @@ namespace TodoApp.Data.Repositories.Implementations
 
         public void Delete(int id)
         {
-            var toDoListItem = _context.TodoItems.FirstOrDefault(item => item.Id == id);
+            var toDoListItem = GetById(id);
             if (toDoListItem != null)
             {
                 _context.TodoItems.Remove(toDoListItem);
