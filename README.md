@@ -16,7 +16,5 @@ Efficiently handle heavy-duty operations using asynchronous programming.
 
 Database Setup
 Create a new database in your SQL Server instance.
-
 Execute the SQL script provided in the database_setup.sql file to set up the necessary tables and schema.
-
 Update the connection string in the appsettings.json file to match your database configuration.
